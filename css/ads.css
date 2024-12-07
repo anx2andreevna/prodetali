@@ -1,0 +1,157 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Noto+Serif&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Oswald:wght@200..700&family=Outfit&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+
+/* body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #fff;
+} */
+body {
+    font-family: "Raleway", sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #333;
+    background: #f4f4f4;
+}
+
+.header {
+    background: #333;
+    padding-top: 15px;
+}
+.header__container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+.header__inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav {
+    font-size: 14px;
+    text-transform: uppercase;
+}
+
+.nav__link {
+    display: inline-block;
+    vertical-align: top;
+    margin: 0 15px;
+    position: relative;
+    color: #fff;
+    text-decoration: none;
+    transition: color .2s linear;
+    font-weight: 700;
+}
+
+.nav__link:after {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 3px;
+    opacity: 0;
+    background-color: #e64a0c;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    z-index: 1;
+    transition: opacity .2s linear;
+}
+
+.nav__link:hover {
+    color: #e64a0c;
+}
+
+.nav__link:hover:after {
+    opacity: 1;
+}
+.nav__link-selected{
+    color: #e64a0c
+}
+/* header {
+    background: #333;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+} */
+h1 {
+    font-size: 2.5rem;
+    margin: 0;
+    font-weight: 700;
+}
+.container {
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 20px;
+}
+.filters {
+    background: #333;
+    color: #FFF;
+    padding: 15px;
+    margin-top: 30px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(255, 0, 0, 0.237);
+}
+.filters label {
+    margin-right: 10px;
+    font-weight: bold;
+}
+.filters select, .filters input[type="text"] {
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-right: 10px;
+    font-size: 15px;
+}
+.btn-search {
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-right: 10px;
+    font-size: 15px;
+}
+.ad-card {
+    background: #fff;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(255, 0, 0, 0.237);
+    overflow: hidden;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+.ad-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+}
+.ad-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+.ad-content {
+    padding: 15px;
+}
+.ad-content h3 {
+    margin: 0 0 10px;
+    color: #333;
+}
+.ad-content p {
+    margin: 0 0 10px;
+    color: #555;
+}
+.ad-content a {
+    display: inline-block;
+    margin-top: 10px;
+    text-decoration: none;
+    color: #007BFF;
+    font-weight: bold;
+}
+footer {
+    text-align: center;
+    padding: 20px;
+    background: #333;
+    color: #fff;
+    margin-top: 20px;
+}

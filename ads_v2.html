@@ -1,0 +1,112 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/ads.css">
+    <title>Объявления</title>
+</head>
+<body>
+    <header class="header">
+        <div class="header__container">
+            <div class="header__inner">
+                <a class="header__logo logo" href="index.html">
+                    <img class="logo__img" src="images/logo.svg" width="120" height="120" alt="logo">
+                </a>
+                <nav class="nav"> 
+                    <a class="nav__link" href="chat-index.html">Чат</a> 
+                    <a class="nav__link nav__link-selected" href="ads_v2.html">Объявления</a> 
+                    <a class="nav__link" href="profile.html">Личный Кабинет</a>
+                    <a class="nav__link" href="error.html">Блог</a>
+                    <a class="nav__link" href="error.html">Поддержка</a> 
+                    <a class="nav__link" href="error.html">Условия</a> 
+                    <a class="nav__link" href="error.html">Поддержать разработчиков</a> 
+                </nav>
+            </div>
+        </div>
+    </header>
+    
+    <div class="container">
+        <div class="title">
+            <h1>Объявления по металлообработке</h1>
+            <p>Тут вы сможете найти подходящие предложения для Вас благодаря фильтрам объявлений</p>
+        </div>
+        <!-- Фильтры -->
+        <div class="filters">
+            <form action="#" method="get">
+                <label for="category">Категория:</label>
+                <select id="category" name="category">
+                    <option value="all">Все</option>
+                    <option value="services">Услуги</option>
+                    <option value="equipment">Оборудование</option>
+                </select>
+                <label for="price-range">Цена:</label>
+                <select id="price-range" name="price-range">
+                    <option value="all">Любая</option>
+                    <option value="low">До 10 000 руб</option>
+                    <option value="medium">10 000 - 100 000 руб</option>
+                    <option value="high">Более 100 000 руб</option>
+                </select>
+                <label for="search">Поиск:</label>
+                <input type="text" id="search" name="search" placeholder="Введите ключевые слова">
+                <button type="submit" class="btn-search">Применить</button>
+            </form>
+        </div>
+        <!-- Объявления -->
+        <!-- Пример объявления 1 -->
+        <div class="ad-card">
+            <img src="https://via.placeholder.com/1200x200" alt="Лазерная резка">
+            <div class="ad-content">
+                <h3>Лазерная резка металла высокого качества</h3>
+                <p>Предлагаем услуги лазерной резки с высокой точностью. Работаем с любыми видами металла. Быстро, качественно, доступно!</p>
+                <p><strong>Цена:</strong> от 100 руб/м2</p>
+                <a href="#">Подробнее</a>
+            </div>
+        </div>
+        <!-- Пример объявления 2 -->
+        <div class="ad-card">
+            <img src="https://via.placeholder.com/1200x200" alt="Продажа станков">
+            <div class="ad-content">
+                <h3>Продажа современных токарных станков</h3>
+                <p>Новые модели с ЧПУ по выгодным ценам. Гарантия, доставка и установка по всей стране.</p>
+                <p><strong>Цена:</strong> от 500 000 руб</p>
+                <a href="#">Узнать больше</a>
+            </div>
+        </div>
+        <!-- Пример объявления 3 -->
+        <div class="ad-card">
+            <img src="https://via.placeholder.com/1200x200" alt="Сварочные работы">
+            <div class="ad-content">
+                <h3>Профессиональные сварочные работы</h3>
+                <p>Выполняем сварочные работы любой сложности. Опытные специалисты, современное оборудование.</p>
+                <p><strong>Цена:</strong> от 1500 руб/час</p>
+                <a href="#">Посмотреть детали</a>
+            </div>
+        </div>
+        <!-- Пример объявления 4 -->
+        <div class="ad-card">
+            <img src="https://via.placeholder.com/1200x200" alt="Металлические конструкции">
+            <div class="ad-content">
+                <h3>Изготовление металлических конструкций на заказ</h3>
+                <p>Проектирование и производство металлоконструкций по вашим параметрам. Доставка и установка.</p>
+                <p><strong>Цена:</strong> от 10 000 руб</p>
+                <a href="#">Подробнее</a>
+            </div>
+        </div>
+        <!-- Пример объявления 5 -->
+        <div class="ad-card">
+            <img src="https://via.placeholder.com/1200x200" alt="Гибка металла">
+            <div class="ad-content">
+                <h3>Гибка металла любой сложности</h3>
+                <p>Предоставляем услуги гибки листового металла на профессиональном оборудовании.</p>
+                <p><strong>Цена:</strong> от 200 руб/м</p>
+                <a href="#">Узнать больше</a>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <p>&copy; 2024 Объявления по металлообработке. Все права защищены.</p>
+    </footer>
+</body>
+</html>
