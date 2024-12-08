@@ -1,0 +1,104 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Noto+Serif&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Oswald:wght@200..700&family=Outfit&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+
+body {
+    font-family: "Raleway", sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #333;
+    background: #f4f4f4;
+}
+button {
+    font-family: "Raleway", sans-serif;
+    color: #fff;
+    background-color: #e64a0c;
+    border: 3px solid #e64a0c;
+    border-radius: 10px;
+    font-size: 17px;
+    padding: 10px 20px;
+}
+.header {
+    background: #333;
+    padding-top: 15px;
+}
+.header__container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+.header__inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav {
+    font-size: 14px;
+    text-transform: uppercase;
+}
+
+.nav__link {
+    display: inline-block;
+    vertical-align: top;
+    margin: 0 15px;
+    position: relative;
+    color: #fff;
+    text-decoration: none;
+    transition: color .2s linear;
+    font-weight: 700;
+}
+
+.nav__link:after {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 3px;
+    opacity: 0;
+    background-color: #e64a0c;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    z-index: 1;
+    transition: opacity .2s linear;
+}
+
+.nav__link:hover {
+    color: #e64a0c;
+}
+
+.nav__link:hover:after {
+    opacity: 1;
+}
+.nav__link-selected{
+    color: #e64a0c
+}
+.numbers {
+    font-family: 'Poppins', sans-serif;
+}
+
+h1 {
+    font-size: 2.5rem;
+    margin: 0;
+    font-weight: 700;
+}
+footer {
+    text-align: center;
+    padding: 20px;
+    background: #333;
+    color: #fff;
+    margin-top: 20px;
+}
+.container {
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 20px;
+}
+.term-container {
+    margin-top: 40px;
+}
+h2::after {
+    content: "";
+    /* background: #e64a0c; */
+    background: linear-gradient(to right, #e64a0c, transparent);;
+    height: 2px;
+    display: block;
+}
