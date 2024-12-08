@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/ads.css">
+    <title>Объявления</title>
+</head>
+<body>
+    <header class="header">
+        <div class="header__container">
+            <div class="header__inner">
+                <a class="header__logo logo" href="index.html">
+                    <img class="logo__img" src="images/logo.svg" width="120" height="120" alt="logo">
+                </a>
+                <nav class="nav"> 
+                    <a class="nav__link" href="chat-index.html" target="_blank">Чат</a> 
+                    <a class="nav__link nav__link-selected" href="ads_v2.html">Объявления</a> 
+                    <a class="nav__link" href="profile.html">Личный Кабинет</a>
+                    <a class="nav__link" href="error.html">Блог</a>
+                    <a class="nav__link" href="error.html">Поддержка</a> 
+                    <a class="nav__link" href="error.html">Условия</a> 
+                    <a class="nav__link" href="error.html">Поддержать разработчиков</a> 
+                </nav>
+            </div>
+        </div>
+    </header>
+    <main>
+        <div class="create__wrapper">
+            <h1 class="title">Создание объявления</h1>
+            <p>Здесь вы можете создать объявление о продаже, металлообработке или других услугах.</p>
+            <form method="" class="create__form form">
+                <label  class="form__label">
+                    Тип услуги
+                    <select id="service_type" name="service_type" class="form__input">
+                        <option value=""></option>
+                        <option value="1">Изготовление металлических изделий</option>
+                        <option value="2">Обработка металла</option>
+                        <option value="3">Проектирование металлических конструкций</option>
+                        <option value="4">Услуги по металлозаготовке</option>
+                    </select>
+                </label>
+                <label  class="form__label service_type-ownType">
+                    ***Свой вариант
+                    <input type="text" name="service_type-ownType" placeholder="" class="form__input">
+                </label>
+                <label  class="form__label">
+                    Описание
+                    <textarea placeholder="" cols="30" rows="3" class="form__textarea"></textarea>
+                </label>
+                <label  class="form__label">
+                    Стоимость (мин)
+                    <div class="form__price">
+                        <input type="number" name="price" min="0" step="any" class="form__input" placeholder="" required>
+                        <select id="price-type" name="price-type" class="form__input" required>
+                            <option value="0">руб</option>
+                            <option value="1">руб/час</option>
+                            <option value="2">руб/м2</option>
+                            <option value="3">руб/м</option>
+                        </select>
+                    </div>
+                </label>
+                <label  class="form__label">
+                    Сроки выполнения
+                    <input type="text" name="date" placeholder="" class="form__input" required>
+                </label>
+
+                <!-- Выбор типа обработки, материалов, региона -->
+                <label  class="form__label processing">
+                    Обработка
+                    <select id="processing" name="processing" class="form__input">
+                        <option value=""></option>
+                        <option value="1">Механическая обработка</option>
+                        <option value="2">Термическая обработка</option>
+                        <option value="3">Гальваническая  обработка</option>
+                    </select>
+                </label>
+                <label  class="form__label materials">
+                    Материалы
+                    <select id="materials" name="materials" class="form__input">
+                        <option value=""></option>
+                        <option value="1">Сталь</option>
+                        <option value="2">Алюминий</option>
+                        <option value="3">Медь</option>
+                    </select>
+                </label>
+                <label  class="form__label region">
+                    Регион
+                    <select id="region" name="region" class="form__input">
+                        <option value=""></option>
+                        <option value="1">Москва и Московская область</option>
+                        <option value="2">Санкт-Петербург и Ленинградская область</option>
+                        <option value="3">Краснодарский край</option>
+                        <option value="4">Свердловская область</option>
+                    </select>
+                </label>
+
+                <!-- Загрузка изображений и чертежей для подробного описания -->
+                <div class="form__download">
+                    <input type="file" name="image" accept="image/*" class="">
+                    <button class="btn-download">Загрузить изображение</button>
+                </div>
+                <div class="form__download">
+                    <input type="file" name="drawing" accept=".dwg,.dxf,.pdf" class="">
+                    <button class="btn-download">Загрузить чертеж</button>
+                </div>
+
+                <label  class="form__label">
+                    <textarea placeholder="Введите ключевые слова (теги)" cols="30" rows="2" class="form__textarea"></textarea>
+                </label>
+
+                <button type="submit" class="btn-create">Создать объявление</button>
+            </form>
+        </div>
+    </main>
+    <footer>
+        <p>&copy; <span class="numbers">2024</span> Объявления по металлообработке. Все права защищены.</p>
+    </footer>
+</body>
+</html>

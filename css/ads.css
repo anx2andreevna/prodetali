@@ -14,7 +14,15 @@ body {
     color: #333;
     background: #f4f4f4;
 }
-
+button {
+    font-family: "Raleway", sans-serif;
+    color: #fff;
+    background-color: #e64a0c;
+    border: 3px solid #e64a0c;
+    border-radius: 10px;
+    font-size: 17px;
+    padding: 10px 20px;
+}
 .header {
     background: #333;
     padding-top: 15px;
@@ -70,12 +78,30 @@ body {
 .nav__link-selected{
     color: #e64a0c
 }
-/* header {
-    background: #333;
-    color: #fff;
-    padding: 20px 0;
-    text-align: center;
-} */
+.numbers {
+    font-family: 'Poppins', sans-serif;
+}
+.wrapper {
+    display: flex;
+    justify-content: space-between;
+}
+.linkAdd {
+    display: inline-block;
+    color: white;
+    text-decoration: none;
+    background-color: #e64a0c;
+    border: 3px solid #e64a0c;
+    border-radius: 10px;
+    margin: 15px 0 40px 0;
+    font-size: 17px;
+    font-weight: 600;
+    padding: 10px 20px;
+    transition: background .2s linear, color .2s linear;
+}
+.linkAdd:hover {
+    background-color: transparent;
+    color: #000;
+}
 h1 {
     font-size: 2.5rem;
     margin: 0;
@@ -154,4 +180,90 @@ footer {
     background: #333;
     color: #fff;
     margin-top: 20px;
+}
+
+.create__wrapper {
+    max-width: 800px;
+    margin: 40px auto;
+    
+}
+.form {
+    margin: 20px auto;
+    background-color: #333;
+    color: #fff;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 10px;
+    padding: 40px;
+    font-size: 20px;
+}
+
+.form__label {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-bottom: 15px;
+}
+.form__input {
+    background: transparent;
+    border: 2px solid #fff;
+    border-radius: 10px;
+    padding: 10px 15px;
+    margin-bottom: 20px;
+    font-family: 'Raleway', sans-serif;
+    font-size: 15px;
+    color: #fff;
+}
+
+.form__input::placeholder{
+    color: #fff;
+    font-family: "Raleway", sans-serif;
+    font-weight: 400;
+    font-size: 14px ;
+    line-height: 17px
+}
+option {
+    color: #000;
+}
+.form__textarea{
+    background: transparent;
+    border: 2px solid #fff;
+    border-radius: 10px;
+    padding: 10px 15px;
+    font-family: "Raleway", sans-serif;
+    font-size: 15px;
+    color: #fff;
+}
+.form__textarea::placeholder{
+    color: #fff;
+    font-family: "Raleway", sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+}
+.form__price {
+    display: flex;
+    justify-content: space-between;
+}
+
+.form__download {
+    display: flex;
+    justify-content: space-between;
+    margin: 30px auto;
+}
+.btn-download {
+    background-color: transparent;
+    font-size: 17px;
+    padding: 10px 20px;
+    border: 2px solid #e64a0c;
+}
+.btn-create {
+    font-size: 20px;
+    font-weight: 600;
+    margin: 40px 237px 20px;
+    border: 2px solid #e64a0c;
+    transition: background .2s linear, color .2s linear;
+}
+.btn-create:hover {
+    background-color: transparent;
+    color: #e64a0c;
 }
