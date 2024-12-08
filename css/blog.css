@@ -74,31 +74,18 @@ button {
 .numbers {
     font-family: 'Poppins', sans-serif;
 }
-.wrapper {
-    display: flex;
-    justify-content: space-between;
-}
-.linkAdd {
-    display: inline-block;
-    color: white;
-    text-decoration: none;
-    background-color: #e64a0c;
-    border: 3px solid #e64a0c;
-    border-radius: 10px;
-    margin: 15px 0 40px 0;
-    font-size: 17px;
-    font-weight: 600;
-    padding: 10px 20px;
-    transition: background .2s linear, color .2s linear;
-}
-.linkAdd:hover {
-    background-color: transparent;
-    color: #000;
-}
+
 h1 {
     font-size: 2.5rem;
     margin: 0;
     font-weight: 700;
+}
+footer {
+    text-align: center;
+    padding: 20px;
+    background: #333;
+    color: #fff;
+    margin-top: 20px;
 }
 .container {
     max-width: 1200px;
@@ -114,23 +101,34 @@ h1 {
     border-radius: 10px;
     box-shadow: 0 4px 6px rgba(255, 0, 0, 0.237);
 }
+.filters__form {
+    display: flex;
+    justify-content: space-between;
+}
 .filters label {
     margin-right: 10px;
     font-weight: bold;
 }
-.filters select, .filters input[type="text"] {
+.filters select, .filters input {
     padding: 5px;
     border: 1px solid #ccc;
     border-radius: 5px;
     margin-right: 10px;
-    font-size: 15px;
+    font-size: 13px;
+}
+.filters input[type="date"] {
+    margin-right: 0px;
 }
 .btn-search {
     padding: 5px;
     border: 1px solid #ccc;
     border-radius: 5px;
-    margin-right: 10px;
     font-size: 15px;
+}
+.cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
 }
 .ad-card {
     background: #fff;
@@ -139,6 +137,7 @@ h1 {
     box-shadow: 0 4px 6px rgba(255, 0, 0, 0.237);
     overflow: hidden;
     transition: transform 0.3s, box-shadow 0.3s;
+    max-width: 49%;
 }
 .ad-card:hover {
     transform: translateY(-5px);
@@ -167,96 +166,33 @@ h1 {
     color: #007BFF;
     font-weight: bold;
 }
-footer {
-    text-align: center;
-    padding: 20px;
-    background: #333;
-    color: #fff;
-    margin-top: 20px;
+.wrapper {
+    display: flex;
+    gap: 50px;
 }
-
-.create__wrapper {
-    max-width: 800px;
-    margin: 40px auto;
-    
-}
-.form {
-    margin: 20px auto;
-    background-color: #333;
-    color: #fff;
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-    border-radius: 10px;
-    padding: 40px;
+.container-topic {
     font-size: 20px;
+    line-height: 28px;
 }
-
-.form__label {
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-    margin-bottom: 15px;
-}
-.form__input {
-    background: transparent;
-    border: 2px solid #fff;
-    border-radius: 10px;
-    padding: 10px 15px;
-    margin-bottom: 20px;
-    font-family: 'Raleway', sans-serif;
-    font-size: 15px;
-    color: #fff;
-}
-
-.form__input::placeholder{
-    color: #fff;
-    font-family: "Raleway", sans-serif;
-    font-weight: 400;
-    font-size: 14px ;
-    line-height: 17px
-}
-option {
-    color: #000;
-}
-.form__textarea{
-    background: transparent;
-    border: 2px solid #fff;
-    border-radius: 10px;
-    padding: 10px 15px;
-    font-family: "Raleway", sans-serif;
-    font-size: 15px;
-    color: #fff;
-}
-.form__textarea::placeholder{
-    color: #fff;
-    font-family: "Raleway", sans-serif;
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 17px;
-}
-.form__price {
+.links-topic {
     display: flex;
     justify-content: space-between;
+    margin-top: 50px;
 }
-
-.form__download {
-    display: flex;
-    justify-content: space-between;
-    margin: 30px auto;
-}
-.btn-download {
+.links-topic a {
+    display: inline-block;
+    color: #e64a0c;
+    text-decoration: none;
     background-color: transparent;
+    border: 2px solid #e64a0c;
+    border-radius: 10px;
+    margin: 15px 0 40px 0;
     font-size: 17px;
-    padding: 10px 20px;
-    border: 2px solid #e64a0c;
-}
-.btn-create {
-    font-size: 20px;
     font-weight: 600;
-    margin: 40px 237px 20px;
-    border: 2px solid #e64a0c;
+    padding: 10px 20px;
     transition: background .2s linear, color .2s linear;
 }
-.btn-create:hover {
+.links-topic a:hover {
     background-color: transparent;
-    color: #e64a0c;
+    color: #000;
 }

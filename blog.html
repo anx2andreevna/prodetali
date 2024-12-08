@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/blog.css">
+    <title>Статьи о металлообработке</title>
+</head>
+<body>
+    <header class="header">
+        <div class="header__container">
+            <div class="header__inner">
+                <a class="header__logo logo" href="index.html">
+                    <img class="logo__img" src="images/logo.svg" width="120" height="120" alt="logo">
+                </a>
+                <nav class="nav"> 
+                    <a class="nav__link" href="chat-index.html" target="_blank">Чат</a> 
+                    <a class="nav__link" href="ads_v2.html">Объявления</a> 
+                    <a class="nav__link" href="profile.html">Личный Кабинет</a>
+                    <a class="nav__link nav__link-selected" href="blog.html">Блог</a>
+                    <a class="nav__link" href="error.html">Поддержка</a> 
+                    <a class="nav__link" href="error.html">Условия</a> 
+                    <a class="nav__link" href="error.html">Поддержать разработчиков</a> 
+                </nav>
+            </div>
+        </div>
+    </header>
+    <main>
+        <div class="container">
+            <h1>Статьи о металлообработке</h1>
+            <p>Полезная информация</p>
+            <!-- Фильтры -->
+            <div class="filters">
+                <form action="#" method="get" class="filters__form">
+                    <div>
+                    <label for="sortedTopics">Сортировка:</label>
+                        <select id="sortedTopics" name="sortedTopics">
+                            <option value="all">Все</option>
+                            <option value="popularity">Сначала популярные</option>
+                            <option value="new">Сначала новые</option>
+                        </select>
+                    <label>Дата публикации:</label>
+                        <input type="date" name="date_from">
+                        —
+                        <input type="date" name="date_to">
+                    </div>
+                    <div class="">
+                    <label for="search" class="label-search">Поиск:</label>
+                    <input type="text" id="search" name="search" placeholder="Введите ключевые слова">
+                    <button type="submit" class="btn-search">Применить</button>
+                </div>
+                </form>
+            </div>
+            <div class="cards">
+                <a href="topic.html">
+                    <div class="ad-card">
+                        <img src="images/lazer.png" alt="Лазерная резка">
+                        <div class="ad-content">
+                            <h3>Лазерная резка металла: преимущества и недостатки</h3>
+                            <p>В статье рассказывается о лазерной резке как о методе обработки металла, рассматриваются её основные преимущества и недостатки.</p>
+                            <a href="topic.html">Читать далее</a>
+                        </div>
+                    </div>
+                </a>
+                <a href="#">
+                    <div class="ad-card">
+                        <img src="https://via.placeholder.com/600x200" alt="Продажа станков">
+                        <div class="ad-content">
+                            <h3>Как выбрать фрезерный станок для мастерской?</h3>
+                            <p>Статья посвящена выбору фрезерного станка для домашней мастерской. Рассматриваются различные типы станков, их характеристики и особенности.</p>
+                            <a href="#">Читать далее</a>
+                        </div>
+                    </div>
+                </a>
+                <a href="#">
+                    <div class="ad-card">
+                        <img src="https://via.placeholder.com/600x200" alt="Сварочные работы">
+                        <div class="ad-content">
+                            <h3>Сварка алюминия: методы и особенности</h3>
+                            <p>Описываются основные методы сварки алюминия (аргонодуговая сварка, сварка полуавтоматом, контактная сварка), их особенности и области применения.</p>
+                            <a href="#">Читать далее</a>
+                        </div>
+                    </div>
+                </a>
+                <a href="#">
+                    <div class="ad-card">
+                        <img src="https://via.placeholder.com/600x200" alt="Металлические конструкции">
+                        <div class="ad-content">
+                            <h3>Токарная обработка металла: основные операции</h3>
+                            <p>Рассматриваются основные операции токарной обработки металла (обтачивание, растачивание, сверление, нарезание резьбы), их назначение и применение.</p>
+                            <a href="#">Читать далее</a>
+                        </div>
+                    </div>
+                </a>
+                <a href="#">
+                    <div class="ad-card">
+                        <img src="https://via.placeholder.com/600x200" alt="Гибка металла">
+                        <div class="ad-content">
+                            <h3>Плазменная резка металла: принцип действия и сферы применения</h3>
+                            <p>Рассказывается о плазменной резке как об одном из методов обработки металла. Объясняется принцип действия плазмотрона, описываются его основные элементы.</p>
+                            <a href="#">Читать далее</a>
+                        </div>
+                    </div>
+                </a>
+                <a href="#">
+                    <div class="ad-card">
+                        <img src="https://via.placeholder.com/600x200" alt="Гибка металла">
+                        <div class="ad-content">
+                            <h3>Как повысить качество сварных швов: советы и рекомендации</h3>
+                            <p>В статье рассматриваются факторы, влияющие на качество сварного шва, а также даются практические советы по повышению качества сварных соединений.</p>
+                            <a href="#">Читать далее</a>
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <p>&copy; <span class="numbers">2024</span> Статьи о металлообработке. Все права защищены.</p>
+    </footer>
+</body>
+</html>
