@@ -1,5 +1,63 @@
 @charset "UTF-8";
 @import url("https://fonts.googleapis.com/css?family=Manrope:300,400,500,600,700&display=swap&subset=latin-ext");
+@import url('https://fonts.googleapis.com/css2?family=Kanit&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Noto+Serif&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Oswald:wght@200..700&family=Outfit&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+
+.header__header {
+  background: #333;
+  padding-top: 15px;
+  font-family: "Raleway", sans-serif;
+}
+.header__container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+.header__inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav {
+  font-size: 14px;
+  text-transform: uppercase;
+}
+
+.nav__link {
+  display: inline-block;
+  vertical-align: top;
+  margin: 0 15px;
+  position: relative;
+  color: #fff;
+  text-decoration: none;
+  transition: color .2s linear;
+  font-weight: 700;
+}
+
+.nav__link:after {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 3px;
+  opacity: 0;
+  background-color: #e64a0c;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  z-index: 1;
+  transition: opacity .2s linear;
+}
+
+.nav__link:hover {
+  color: #e64a0c;
+}
+
+.nav__link:hover:after {
+  opacity: 1;
+}
+.nav__link-selected{
+  color: #e64a0c
+}
 :root {
   --body-bg-color: #e5ecef;
   --theme-bg-color: #fff;
